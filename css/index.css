@@ -1,0 +1,9 @@
+body {
+    margin: 0 auto;
+    width: 100%;
+    min-width: 320px;
+    max-width: 1080px;
+    background: #fff;
+    font-size: 14px;
+    font-family: -apple-system, Helvetica, sans-serif;
+}
