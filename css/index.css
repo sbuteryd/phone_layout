@@ -5,5 +5,7 @@ body {
     max-width: 1080px;
     background: #fff;
     font-size: 14px;
+    line-height: 1.5;
+    color: #666;
     font-family: -apple-system, Helvetica, sans-serif;
 }
