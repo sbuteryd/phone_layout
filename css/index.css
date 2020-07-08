@@ -19,6 +19,11 @@ body {
   font-family: -apple-system, Helvetica, sans-serif;
 }
 
+a {
+  color: #666;
+  text-decoration: none;
+}
+
 .app {
   height: 45px;
   background: #333;
@@ -133,7 +138,41 @@ body {
   font-size: 14px;
   color: #fff;
 }
+
 /* main_content */
 .main_content .slide img {
+  width: 100%;
+}
+
+/* nav */
+nav {
+  padding-top: 20px;
+}
+
+nav a {
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+
+nav a img {
+  margin: 10px 0;
+  width: 40px;
+  height: 40px;
+}
+
+nav a span {
+  display: block;
+}
+
+
+/* news */
+
+.news a {
+  float: left;
+  width: 50%;
+}
+
+.news a img {
   width: 100%;
 }
