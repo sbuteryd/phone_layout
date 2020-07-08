@@ -22,6 +22,9 @@ body {
 .app {
     height: 45px;
     background: #333;
+    color: #fff;
+    line-height: 45px;
+    text-align: center;
 }
 
 .app ul li {
@@ -33,8 +36,17 @@ body {
     width: 8%;
 }
 
+.app ul li:nth-child(1) img {
+    width: 10px;
+}
+
 .app ul li:nth-child(2) {
     width: 10%;
+}
+
+.app ul li:nth-child(2) img {
+    width: 30px;
+    vertical-align: middle;
 }
 
 .app ul li:nth-child(3) {
