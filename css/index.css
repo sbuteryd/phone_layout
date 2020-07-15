@@ -1,3 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
 body {
   margin: 0 auto;
   min-width: 320px;
@@ -5,9 +13,31 @@ body {
   width: 100%;
   background: #fff;
   font-size: 14px;
-  font-family: -apple-system,
-    Helvetica,
-    sans-serif;
+  font-family: -apple-system, Helvetica, sans-serif;
   line-height: 1.5;
   color: #666;
+}
+
+.app {
+  background: #333333;
+  height: 45px;
+}
+.app ul {
+  height: 45px;
+}
+.app ul li:nth-child(1) {
+  width: 8%;
+}
+.app ul li {
+  float: left;
+  height: 45px;
+}
+.app ul li:nth-child(2) {
+  width: 10%;
+}
+.app ul li:nth-child(3) {
+  width: 57%;
+}
+.app ul li:nth-child(4) {
+  width: 25%;
 }
