@@ -21,19 +21,30 @@ body {
 .app {
   background: #333333;
   height: 45px;
+  text-align: center;
+  line-height: 45px;
+  color: #fff;
 }
 .app ul {
   height: 45px;
 }
-.app ul li:nth-child(1) {
-  width: 8%;
-}
 .app ul li {
   float: left;
   height: 45px;
+  line-height: 45px;
+}
+.app ul li:nth-child(1) {
+  width: 8%;
+}
+.app ul li:nth-child(1) img {
+  width: 10px;
 }
 .app ul li:nth-child(2) {
   width: 10%;
+}
+.app ul li:nth-child(2) img {
+  width: 30px;
+  vertical-align: middle;
 }
 .app ul li:nth-child(3) {
   width: 57%;
