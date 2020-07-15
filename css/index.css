@@ -52,3 +52,35 @@ body {
 .app ul li:nth-child(4) {
   width: 25%;
 }
+/* app end */
+
+.button_wrap {
+  position: relative;
+  height: 44px;
+  background: pink;
+  overflow: hidden;
+}
+
+.button_wrap .menue {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 44px;
+  background: purple;
+}
+.search_input {
+  margin: 0 50px;
+  margin-top: 7px;
+  border-radius: 15px;
+  height: 30px;
+  background: #ccc;
+}
+.button_wrap .login {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 44px;
+  background: purple;
+}
