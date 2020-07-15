@@ -69,7 +69,10 @@ body {
 /* app end */
 
 .button_wrap {
-  position: relative;
+  position: fixed;
+  width: 100%;
+  max-width: 320px;
+  max-width: 1080px;
   height: 44px;
   background: #c82519;
   overflow: hidden;
@@ -137,3 +140,12 @@ body {
   background: url('../images/jd-sprites.png') -83px 0;
   background-size: 200px auto;
 }
+
+/* banner  start */
+.slider img {
+  width: 100%;
+  min-width: 32px;
+  max-width: 1080px;
+}
+
+/* banner end */
