@@ -149,3 +149,16 @@ body {
 }
 
 /* banner end */
+/* 品牌活动 开始 */
+
+.brand div {
+  float: left;
+  width: 33.33%;
+}
+
+.brand div img {
+  width: 100%;
+}
+
+
+/* 品牌活动 结束 */
