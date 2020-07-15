@@ -194,3 +194,15 @@ nav span {
 }
 
 /* nav end */
+
+/* news start */
+.news a {
+  float: left;
+  width: 50%;
+}
+
+.news img {
+  width: 100%;
+}
+
+/* news end */
