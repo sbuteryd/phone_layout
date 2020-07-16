@@ -67,5 +67,41 @@ li {
   line-height: 45px;
 }
 
-
 /* app end */
+
+/* search start */
+.search_box {
+  position: relative;
+  height: 44px;
+  background: rgb(119, 118, 119);
+  overflow: hidden;
+}
+
+.menue {
+  position: absolute;
+  right: 0;
+  left: 0;
+  width: 40px;
+  height: 44px;
+  background: pink;
+}
+
+.search {
+  /* 这个不需要给宽度吧 不然 给百分比会 突出来 */
+  margin: 0 50px;
+  margin-top: 7px;
+  border-radius: 15px;
+  height: 30px;
+  background: #fff;
+}
+
+.login {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 40px;
+  height: 44px;
+  background: pink;
+}
+
+/* search end */
