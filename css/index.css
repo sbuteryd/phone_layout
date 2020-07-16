@@ -8,6 +8,10 @@ li {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 .content {
   margin: 0 auto;
   height: 100px;
@@ -72,7 +76,7 @@ li {
 .search_box {
   position: relative;
   height: 44px;
-  background: rgb(119, 118, 119);
+  background: #c8261a;
   overflow: hidden;
 }
 
@@ -83,11 +87,13 @@ li {
   width: 40px;
   height: 44px;
 }
+
 .menue img {
   margin: 15px 0 0 15px;
   width: 20px;
   height: 18px;
 }
+
 .search {
   position: relative;
   /* 这个不需要给宽度吧 不然 给百分比会 突出来 */
@@ -97,6 +103,7 @@ li {
   height: 30px;
   background: #fff;
 }
+
 .search .jd-icon {
   position: absolute;
   top: 8px;
@@ -104,14 +111,67 @@ li {
   width: 20px;
   height: 15px;
   background: url("../images/search_jd_logo.png");
+  background-size: 20px 15px;
 }
+
+.search .jd-icon::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 25px;
+  width: 1px;
+  height: 15px;
+  background: rgb(102, 99, 99, 0.3);
+}
+
+.search .sou {
+  content: '';
+  position: absolute;
+  top: 7px;
+  left: 50px;
+  width: 18px;
+  height: 15px;
+  background: url('../images/jd-sprites.png') -81px 0;
+  background-size: 200px auto;
+}
+
 .login {
   position: absolute;
   right: 0;
   top: 0;
   width: 40px;
   height: 44px;
-  background: pink;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  line-height: 44px;
 }
 
-/* search end */
+
+/* banner start */
+.banner img {
+  width: 100%;
+}
+
+/* nav  */
+.nav {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.nav a {
+  float: left;
+  width: 20%;
+}
+
+.nav a span {
+  display: block;
+  margin: 10px 0;
+  font-size: 12px;
+  color: #666666
+}
+
+.nav a img {
+  width: 40px;
+  height: 40px;
+}
