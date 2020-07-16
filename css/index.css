@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+body {
+  height: 3000px;
+}
+
 li {
   list-style: none;
 }
@@ -74,7 +78,8 @@ a {
 
 /* search start */
 .search_box {
-  position: relative;
+  position: fixed;
+  width: 100%;
   height: 44px;
   background: #c8261a;
   overflow: hidden;
@@ -174,4 +179,14 @@ a {
 .nav a img {
   width: 40px;
   height: 40px;
+}
+
+/* promotion start */
+.promotion>div {
+  float: left;
+  width: 50%;
+}
+
+.promotion>div img {
+  width: 100%;
 }
