@@ -44,7 +44,6 @@ li {
 .app li:nth-child(2) {
   width: 10%;
   height: 45px;
-
 }
 
 .app li:nth-child(2) img {
@@ -83,10 +82,14 @@ li {
   left: 0;
   width: 40px;
   height: 44px;
-  background: pink;
 }
-
+.menue img {
+  margin: 15px 0 0 15px;
+  width: 20px;
+  height: 18px;
+}
 .search {
+  position: relative;
   /* 这个不需要给宽度吧 不然 给百分比会 突出来 */
   margin: 0 50px;
   margin-top: 7px;
@@ -94,7 +97,14 @@ li {
   height: 30px;
   background: #fff;
 }
-
+.search .jd-icon {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  width: 20px;
+  height: 15px;
+  background: url("../images/search_jd_logo.png");
+}
 .login {
   position: absolute;
   right: 0;
