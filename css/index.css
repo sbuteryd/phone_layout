@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0
+}
+
 body {
   margin: 0 auto;
   min-width: 320px;
@@ -11,4 +16,70 @@ body {
   color: #666;
   -webkit-text-size-adjust: 100% !important;
   padding-bottom: env(safe-area-inset-bottom);
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: middle
+}
+
+.clearfix::before,
+.clearfix::after {
+  content: '';
+  display: table
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+/* app start */
+
+.app {
+  height: 45px;
+  line-height: 45px;
+}
+
+.app ul li {
+  float: left;
+  text-align: center;
+  background: #333;
+  color: #fff;
+}
+
+.app li:first-child {
+  width: 8%;
+}
+
+.app li:first-child img {
+  width: 10px;
+  height: 10px;
+}
+
+.app li:nth-child(2) {
+  width: 10%;
+}
+
+.app li:nth-child(2) img {
+  width: 30px;
+  height: 30px;
+}
+
+.app li:nth-child(3) {
+  width: 57%;
+}
+
+.app li:nth-child(4) {
+  width: 25%;
+}
+
+.app li:nth-child(4) {
+  background: #f63615;
 }
