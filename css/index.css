@@ -18,10 +18,6 @@ body {
   padding-bottom: env(safe-area-inset-bottom);
 }
 
-body {
-  height: 3000px;
-}
-
 li {
   list-style: none;
 }
