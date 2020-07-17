@@ -1,39 +1,67 @@
 * {
-  box-sizing: border-box;
   margin: 0;
-  padding: 0;
+  padding: 0
+}
+
+body {
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 640px;
+  background: #fff;
+  font-size: 14px;
+  font-family: -apple-system,
+    Helvetica,
+    sans-serif;
+  line-height: 1.5;
+  color: #666;
+  -webkit-text-size-adjust: 100% !important;
+  padding-bottom: env(safe-area-inset-bottom);
 }
 
 li {
   list-style: none;
 }
 
-.content {
-  margin: 0 auto;
-  height: 100px;
-  width: 100%;
-  min-width: 320px;
-  max-width: 1080px;
+a {
+  color: #666;
+  font-size: 12px;
+  text-decoration: none
+}
+
+img {
+  vertical-align: middle
+}
+
+.clearfix::before,
+.clearfix::after {
+  content: '';
+  display: table
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
 }
 
 /* app start */
+
 .app {
-  width: 100%;
   height: 45px;
-  background: #333;
-  text-align: center;
   line-height: 45px;
-  color: #fff;
 }
 
 .app ul li {
   float: left;
+  text-align: center;
+  background: #333;
+  color: #fff;
 }
 
 .app li:first-child {
   width: 8%;
-  height: 45px;
-  line-height: 45px;
 }
 
 .app li:first-child img {
@@ -43,75 +71,150 @@ li {
 
 .app li:nth-child(2) {
   width: 10%;
-  height: 45px;
 }
 
 .app li:nth-child(2) img {
   width: 30px;
   height: 30px;
-  vertical-align: middle;
 }
 
 .app li:nth-child(3) {
   width: 57%;
-  height: 45px;
-  font-size: 14px;
 }
 
 .app li:nth-child(4) {
   width: 25%;
-  height: 45px;
-  background: #f63515;
-  font-size: 14px;
-  line-height: 45px;
 }
 
-/* app end */
+.app li:nth-child(4) {
+  background: #f63615;
+}
 
-/* search start */
-.search_box {
-  position: relative;
+/* 搜索栏 */
+.search_wrap {
+  position: fixed;
+  width: 100%;
   height: 44px;
-  background: rgb(119, 118, 119);
+  min-width: 320px;
+  max-width: 640px;
   overflow: hidden;
 }
 
 .menue {
   position: absolute;
-  right: 0;
   left: 0;
+  right: 0;
   width: 40px;
   height: 44px;
 }
+
 .menue img {
   margin: 15px 0 0 15px;
   width: 20px;
   height: 18px;
 }
+
 .search {
+  /* 这个不需要给百分比吧？？ */
+  /* width: 100%; */
   position: relative;
-  /* 这个不需要给宽度吧 不然 给百分比会 突出来 */
-  margin: 0 50px;
-  margin-top: 7px;
   border-radius: 15px;
+  margin: 0 50px;
+  margin-top: 10px;
   height: 30px;
   background: #fff;
 }
-.search .jd-icon {
+
+.icon-jd {
   position: absolute;
-  top: 8px;
-  left: 16px;
+  top: 10px;
+  left: 12px;
   width: 20px;
   height: 15px;
-  background: url("../images/search_jd_logo.png");
-}
-.login {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 40px;
-  height: 44px;
-  background: pink;
+  background: url('../images/jd.png') no-repeat;
+  background-size: 20px 15px;
 }
 
-/* search end */
+.icon-jd::after {
+  content: '';
+  position: absolute;
+  top: 1px;
+  left: 25px;
+  width: 1px;
+  height: 15px;
+}
+
+.sou {
+  position: absolute;
+  top: 10px;
+  left: 41px;
+  width: 20px;
+  height: 15px;
+  background: url('../images/jd-sprites.png') no-repeat -80px 0;
+  background-size: 200px auto;
+}
+
+.login {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 44px;
+  line-height: 44px
+}
+
+/* slider */
+.slider img {
+  width: 100%;
+}
+
+/* promotion */
+.promotion ul li {
+  float: left;
+  width: 33.333%;
+}
+
+.promotion ul li img {
+  width: 100%;
+}
+
+/* nav */
+.nav {
+  text-align: center;
+}
+
+.nav a {
+  float: left;
+  width: 20%;
+}
+
+.nav img {
+  margin: 10px 0;
+  width: 40px;
+  height: 40px;
+}
+
+.nav span {
+  display: block;
+}
+
+/* graphic-separation" */
+.graphic-separation ul li {
+  float: left;
+}
+
+.graphic-separation ul li img {
+  width: 100%;
+}
+
+.graphic-separation ul li:first-child {
+  width: 50%;
+}
+
+.graphic-separation ul li:nth-child(2) {
+  width: 25%;
+}
+
+.graphic-separation ul li:nth-child(3) {
+  width: 25%;
+}
