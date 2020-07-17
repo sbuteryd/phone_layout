@@ -102,10 +102,10 @@ img {
 
 .menue {
   position: absolute;
+  top: 4px;
   left: 0;
   right: 0;
   width: 40px;
-  height: 44px;
 }
 
 .menue img {
@@ -156,11 +156,12 @@ img {
 
 .login {
   position: absolute;
-  top: 0;
+  top: 4px;
   right: 0;
   width: 40px;
   height: 44px;
-  line-height: 44px
+  line-height: 44px;
+  color: #fff;
 }
 
 /* slider */
